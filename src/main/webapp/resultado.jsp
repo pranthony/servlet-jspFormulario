@@ -11,13 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SENATI</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
       
     <!-- Start Top Bar -->
     <div class="top-bar">
       <div class="top-bar-left">
-        <ul class="menu">
+        <ul class="menu flex-container">
           <li class="menu-text">Botz</li>
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Products</a></li>
@@ -43,18 +45,18 @@
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">Informacion personal</a>
     <div class="accordion-content" data-tab-content >
-      <p>Nombres : ${ayudante.datos.name}</p>
-      <p>Email   : ${ayudante.datos.email}</p>
-      <p>Edad    : ${ayudante.datos.age}</p>
-      <p>Pais    : ${ayudante.datos.genero}</p>
+        <p><strong>Nombres</strong> : ${ayudante.datos.name}</p>
+        <p><strong>Email</strong>   : ${ayudante.datos.email}</p>
+        <p><strong>Edad</strong>    : ${ayudante.datos.age}</p>
+      <p><strong>Pais</strong>    : ${ayudante.datos.genero}</p>
       <a href="#"></a>
     </div>
   </li>
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Informacion de desarrollador</a>
     <div class="accordion-content" data-tab-content>
-            <p>Nivel  : ${ayudante.datos.level}</p>
-            <p>Lenguaje de programacion:
+            <p><strong>Perfil</strong>  : ${ayudante.datos.level}</p>
+            <p><strong>Lenguaje de programacion:</strong>
                     ${ayudante.datos.languages}
                 </p>
     </div>
